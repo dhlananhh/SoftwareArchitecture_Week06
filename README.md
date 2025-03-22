@@ -7,6 +7,8 @@
 
 ---
 
+## Phần I: Các lệnh cơ bản thao tác với Docker
+
 ![](proof_images/1.png)
 
 ![](proof_images/2.png)
@@ -28,3 +30,15 @@
 ![](proof_images/10.png)
 
 ![](proof_images/11.png)
+
+![](proof_images/12.png)
+
+![](proof_images/13.png)
+
+![](proof_images/14.png)
+
+![](proof_images/15.png)
+
+![](proof_images/16.png)
+
+![](proof_images/17.png)
