@@ -1,0 +1,10 @@
+Build Docker image:
+docker build -t redis-custom-docker .
+
+Run Docker container:
+docker run -d -p 6379:6379 redis-custom-docker
+
+Check if the container is running:
+docker ps
+docker exec -it <container_id> redis-cli
+PING # Nên trả về PONG
