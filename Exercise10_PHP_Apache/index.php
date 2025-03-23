@@ -37,6 +37,11 @@
             padding: 5px;
             border-radius: 3px;
         }
+        .info p:nth-child(even) {
+            background-color: #e2e6ea;
+            padding: 5px;
+            border-radius: 3px;
+        }
     </style>
 </head>
 <body>
