@@ -3,23 +3,29 @@
 
 # Run the container
     docker run -d \
-        --name mypostgres \
+        --name postgres \
         -e POSTGRES_PASSWORD=postgres \
         -p 5432:5432 \
         -v pgdata:/var/lib/postgresql/data \
         my-custom-postgres
+    
+    docker run -d --name postgres -e POSTGRES_PASSWORD=postgres -p 5432:5432 -v pgdata:/var/lib/postgresql/data my-custom-postgres
+
+    docker run -d --name postgres -e POSTGRES_PASSWORD=postgres -p 5433:5432 -v pgdata:/var/lib/postgresql/data my-custom-postgres
 
 # Xem Logs
-    docker logs mypostgres
+    docker logs my-custom-postgres
 
 # Test the connection
     docker exec -it postgres psql -U postgres
 
 # Test the container
-psql -h localhost -U postgres -d postgres -c "SELECT * FROM test;"
+    psql -h localhost -p 5433 -U postgres -d mydb -W
+or:
+    docker exec -it postgres psql -U postgres -d mydb -W
 
 # Stop Docker connection
-    docker stop mypostgres
+    docker stop my-custom-postgres
 
 # Remove Docker container
-    docker rm mypostgres
+    docker rm my-custom-postgres
