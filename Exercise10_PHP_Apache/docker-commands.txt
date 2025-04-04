@@ -1,18 +1,18 @@
 # Build the image
-docker build -t my-php-apache-app .
+    docker build -t my-php-apache-app .
 
 # Run the container
-docker run -d -p 8080:80 my-php-apache-app
+    docker run -d -p 8080:80 my-php-apache-app
 
 # Test the container
-curl http://localhost:8080
-# Expected: The content of index.php
+    curl http://localhost:8080
+    # Expected: The content of index.php
 
 # Stop the container
-docker stop <container_id>
+    docker stop <container_id>
 
 # Remove the container
-docker rm <container_id>
+    docker rm <container_id>
 
 # Remove the image
-docker rmi my-php-apache-app
+    docker rmi my-php-apache-app
