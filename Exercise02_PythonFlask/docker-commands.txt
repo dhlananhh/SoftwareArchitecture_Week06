@@ -1,15 +1,15 @@
 # Build Docker image
-docker build -t my-flask-app .
+    docker build -t my-flask-app .
 
 # Run Docker container
-docker run -d -p 5000:5000 --name docker-flask-app my-flask-app
+    docker run -d -p 5000:5000 --name docker-flask-app my-flask-app
 
 # Test
     - Mở trình duyệt và truy cập http://localhost:5000. Bạn sẽ thấy "Hello, Docker Flask!".
     - Hoặc dùng curl: curl http://localhost:5000
 
 # Stop Docker container
-docker stop docker-flask-app
+    docker stop docker-flask-app
 
 # Remove Docker container
-docker rm docker-flask-app
+    docker rm docker-flask-app
