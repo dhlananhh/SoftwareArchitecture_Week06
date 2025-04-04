@@ -1,0 +1,14 @@
+# Build Docker image
+docker build -t my-react-app .
+
+# Run Docker image
+docker run -d -p 80:3000 --name react-prod-app my-react-app
+
+# Test
+Mở trình duyệt và truy cập http://localhost (hoặc http://localhost:8080 nếu bạn ánh xạ tới cổng 8080). Bạn sẽ thấy ứng dụng React của mình.
+
+# Stop Docker container
+docker stop react-prod-app
+
+# Remove Docker container
+docker rm react-prod-app
