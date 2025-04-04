@@ -1,36 +1,25 @@
 # Build the image
-docker build -t bai08_postgresql .
+    docker build -t my-custom-postgres .
 
 # Run the container
-docker run -d -p 5432:5432 --name bai08_postgresql bai08_postgresql
+    docker run -d \
+        --name mypostgres \
+        -e POSTGRES_PASSWORD=postgres \
+        -p 5432:5432 \
+        -v pgdata:/var/lib/postgresql/data \
+        my-custom-postgres
+
+# Xem Logs
+    docker logs mypostgres
+
+# Test the connection
+    docker exec -it postgres psql -U postgres
 
 # Test the container
 psql -h localhost -U postgres -d postgres -c "SELECT * FROM test;"
-# Expected: The content of init.sql
 
-# Stop the container
-docker stop bai08_postgresql
+# Stop Docker connection
+    docker stop mypostgres
 
-# Remove the container
-docker rm bai08_postgresql
-
-# Remove the image
-docker rmi bai08_postgresql
-
-# Remove the volume
-docker volume rm $(docker volume ls -qf dangling=true)
-
-# Remove all volumes
-docker volume rm $(docker volume ls -q)
-
-# Remove all containers
-docker rm $(docker ps -a -q)
-
-# Remove all images
-docker rmi $(docker images -q)
-
-# Remove all dangling images
-docker rmi $(docker images -f "dangling=true" -q)
-
-# Remove all networks
-docker network rm $(docker network ls -q)
+# Remove Docker container
+    docker rm mypostgres
