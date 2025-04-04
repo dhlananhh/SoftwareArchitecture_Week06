@@ -7,8 +7,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary-color: #007bff; /* Màu xanh dương chủ đạo */
-            --secondary-color: #6c757d; /* Màu xám */
+            --primary-color: #007bff; 
+            --secondary-color: #6c757d; 
             --background-light: #f8f9fa;
             --background-white: #ffffff;
             --text-dark: #343a40;
@@ -28,7 +28,7 @@
         }
 
         .page-container {
-            max-width: 900px; /* Tăng chiều rộng tối đa */
+            max-width: 900px; 
             margin: 30px auto;
             padding: 30px;
             background-color: var(--background-white);
@@ -41,12 +41,12 @@
             margin-bottom: 1.5rem;
             border-bottom: 2px solid var(--primary-color);
             padding-bottom: 0.5rem;
-            font-weight: 500; /* Hơi đậm hơn */
+            font-weight: 500; 
         }
         h1 {
             text-align: center;
             font-size: 2rem;
-            border-bottom-width: 3px; /* H1 đậm hơn H2 */
+            border-bottom-width: 3px; 
         }
         h2 {
             font-size: 1.5rem;
@@ -58,42 +58,41 @@
             border: 1px solid var(--border-color);
             border-radius: var(--border-radius);
             padding: 20px;
-            margin-bottom: 2rem; /* Khoảng cách với phần dưới */
+            margin-bottom: 2rem; 
             box-shadow: inset 0 1px 3px rgba(0,0,0,0.04);
         }
 
         .info-item {
-            display: flex; /* Sử dụng flexbox để căn chỉnh */
-            justify-content: space-between; /* Đẩy label và value ra hai bên */
+            display: flex; 
+            justify-content: space-between; 
             align-items: center;
-            padding: 10px 15px; /* Thêm padding */
-            border-bottom: 1px dashed var(--border-color); /* Đường kẻ đứt thay vì nền */
-            transition: background-color 0.2s ease-in-out; /* Hiệu ứng hover */
+            padding: 10px 15px; 
+            border-bottom: 1px dashed var(--border-color); 
+            transition: background-color 0.2s ease-in-out; 
         }
         .info-item:last-child {
-            border-bottom: none; /* Bỏ border cho item cuối */
+            border-bottom: none; 
         }
         .info-item:hover {
-            background-color: #e9ecef; /* Nền khi hover */
+            background-color: #e9ecef; 
         }
 
         .info-item .label {
-            font-weight: 500; /* In đậm nhãn */
+            font-weight: 500; 
             color: var(--text-light);
-            flex-shrink: 0; /* Không co label */
-            margin-right: 15px; /* Khoảng cách giữa label và value */
+            flex-shrink: 0; 
+            margin-right: 15px; 
         }
         .info-item .value {
             color: var(--text-dark);
             text-align: right;
-            word-break: break-all; /* Xuống dòng nếu value quá dài */
+            word-break: break-all; 
         }
-
 
         .intro-text {
             text-align: center;
             color: var(--secondary-color);
-            margin-bottom: 2rem; /* Khoảng cách với hr */
+            margin-bottom: 2rem; 
             font-style: italic;
         }
 
@@ -104,13 +103,12 @@
             margin: 2rem 0;
         }
 
-        /* Cố gắng style cho phần phpinfo() một chút */
         .phpinfo-output {
             border: 1px solid var(--border-color);
             border-radius: var(--border-radius);
             padding: 15px;
             margin-top: 1rem;
-            overflow-x: auto; /* Thêm scrollbar ngang nếu cần */
+            overflow-x: auto; 
             background-color: #fdfdfd;
             box-shadow: var(--box-shadow);
         }
@@ -119,7 +117,7 @@
             border-collapse: collapse;
         }
         .phpinfo-output .e, .phpinfo-output .v {
-             padding: 8px 10px !important; /* Thử ghi đè padding mặc định */
+            padding: 8px 10px !important; 
             border: 1px solid #ddd !important;
         }
         .phpinfo-output .h {
@@ -127,7 +125,6 @@
             color: var(--background-white) !important;
             font-weight: bold !important;
         }
-
 
     </style>
 </head>
@@ -137,7 +134,7 @@
 
         <div class="info-box">
             <?php
-            // Hàm tiện ích để tạo một item thông tin
+
             function display_info($label, $value) {
                 echo "<div class='info-item'>";
                 echo "<span class='label'>{$label}:</span>";
@@ -146,9 +143,9 @@
             }
 
             display_info("Phiên bản PHP", phpversion());
-            display_info("Giờ Server", date("Y-m-d H:i:s T")); // Thêm Timezone (T)
-            display_info("IP Server (Container)", $_SERVER['SERVER_ADDR'] ?? 'N/A'); // Sử dụng ?? để tránh lỗi nếu không có
-            display_info("Container Hostname/ID", gethostname()); // Lấy hostname làm ID
+            display_info("Giờ Server", date("Y-m-d H:i:s T")); 
+            display_info("IP Server (Container)", $_SERVER['SERVER_ADDR'] ?? 'N/A'); 
+            display_info("Container Hostname/ID", gethostname()); 
             ?>
         </div>
 
@@ -161,13 +158,12 @@
         <h2>Thông tin chi tiết PHP (<code>phpinfo()</code>)</h2>
         <div class="phpinfo-output">
             <?php
-                ob_start(); // Bắt đầu bộ đệm đầu ra
+                ob_start(); 
                 phpinfo();
-                $phpinfo_content = ob_get_clean(); // Lấy nội dung bộ đệm và xóa
+                $phpinfo_content = ob_get_clean(); 
 
-                // Thử loại bỏ một số inline style không mong muốn (tùy chọn, có thể gây lỗi nếu phpinfo thay đổi)
                 $phpinfo_content = preg_replace('%<style type="text/css">(.*?)</style>%si', '', $phpinfo_content);
-                // Loại bỏ các thẻ <br> không cần thiết đầu cuối
+
                 $phpinfo_content = preg_replace('/^<br \/>\s*/i', '', $phpinfo_content);
                 $phpinfo_content = preg_replace('/\s*<br \/>$/i', '', $phpinfo_content);
 
