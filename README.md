@@ -42,3 +42,25 @@
 ![](proof_images/16.png)
 
 ![](proof_images/17.png)
+
+---
+
+## Phần II: Thao tác với Dockerfile
+
+### Bài 1:
+
+#### Build Docker Image
+
+![](proof_images/Ex01_NodeJS_DockerBuild.png)
+
+#### Run Docker Container
+
+![](proof_images/Ex01_NodeJS_DockerRun.png)
+
+#### Test
+
+![](proof_images/Ex01_NodeJS_Test.png)
+
+#### Stop Docker Container
+
+![](proof_images/Ex01_NodeJS_DockerStop.png)
