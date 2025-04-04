@@ -1,8 +1,8 @@
 # Build the image
-docker build -t bai10_php_apache .
+docker build -t my-php-apache-app .
 
 # Run the container
-docker run -d -p 8080:80 bai10_php_apache
+docker run -d -p 8080:80 my-php-apache-app
 
 # Test the container
 curl http://localhost:8080
@@ -15,4 +15,4 @@ docker stop <container_id>
 docker rm <container_id>
 
 # Remove the image
-docker rmi bai10_php_apache
+docker rmi my-php-apache-app
