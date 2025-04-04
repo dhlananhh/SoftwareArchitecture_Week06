@@ -1,0 +1,14 @@
+# Build Docker image
+    docker build -t my-python-env-app .
+
+# Run Docker container
+    docker run --name py-env-dev my-python-env-app
+    Bạn sẽ thấy output tương tự:
+        Starting application in 'development' mode.
+        Running DEVELOPMENT/other logic...
+
+# Remove this Docker container
+    docker rm py-env-dev
+
+# Chạy và ghi đè biến môi trường
+    docker run -e APP_ENV=production --name py-env-prod my-python-env-app
