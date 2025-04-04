@@ -1,3 +1,3 @@
-module github.com/hackersandslackers/golang-helloworld
+module github.com/yourusername/docker-go-example
 
-go 1.24.1
+go 1.18

@@ -1,27 +1,17 @@
 package main
 
 import (
-    "fmt"
-    "log"
-    "net/http"
-    "os"
+	"fmt"
+	"log"
+	"net/http"
 )
 
 func handler(w http.ResponseWriter, r *http.Request) {
-    log.Printf("Received request from %s\n", r.RemoteAddr)
-    fmt.Fprintf(w, "Hello from Go in Docker!")
+	fmt.Fprintf(w, "Hello, Docker Go!")
 }
 
 func main() {
-    port := "8080"
-    if fromEnv := os.Getenv("PORT"); fromEnv != "" {
-        port = fromEnv
-    }
-    log.Printf("Server starting on port %s\n", port)
-
-    http.HandleFunc("/", handler)
-    err := http.ListenAndServe(":"+port, nil)
-    if err != nil {
-        log.Fatal(err)
-    }
+	http.HandleFunc("/", handler)
+	fmt.Println("Server started at http://localhost:8080")
+	log.Fatal(http.ListenAndServe(":8080", nil))
 }
