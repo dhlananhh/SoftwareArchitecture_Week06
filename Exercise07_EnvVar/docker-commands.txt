@@ -7,8 +7,17 @@
         Starting application in 'development' mode.
         Running DEVELOPMENT/other logic...
 
-# Remove this Docker container
+# Dừng & Xóa container này:
+    docker stop py-env-dev
     docker rm py-env-dev
 
 # Chạy và ghi đè biến môi trường
     docker run -e APP_ENV=production --name py-env-prod my-python-env-app
+    -e APP_ENV=production: Ghi đè giá trị của APP_ENV thành production khi chạy container.
+    Bạn sẽ thấy output tương tự:
+        Starting application in 'production' mode.
+        Running PRODUCTION specific logic...
+
+# Dừng & Xóa container này:
+    docker stop py-env-prod
+    docker rm py-env-prod
