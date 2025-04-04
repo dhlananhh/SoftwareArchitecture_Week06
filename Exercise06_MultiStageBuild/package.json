@@ -1,5 +1,5 @@
 {
-  "name": "bai01_nodejs_app",
+  "name": "bai06_multistage_app",
   "version": "1.0.0",
   "description": "Simple Node.js Hello Docker app",
   "main": "app.js",
