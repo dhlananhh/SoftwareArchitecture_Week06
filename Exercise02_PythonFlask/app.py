@@ -3,8 +3,9 @@ from flask import Flask
 app = Flask(__name__)
 
 @app.route('/')
-def hello_docker_flask():
-    return 'Hello, Docker Flask!'
+def hello():
+    return "Hello, Docker Flask!\n"
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
+    # Chạy server trên địa chỉ 0.0.0.0 để có thể truy cập từ bên ngoài container
+    app.run(host='0.0.0.0', port=5000, debug=True) # debug=True chỉ dùng cho developer
