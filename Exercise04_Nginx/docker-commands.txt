@@ -1,14 +1,15 @@
 # Build Docker image
-docker build -t my-static-web .
+    docker build -t my-static-web .
 
 # Run Docker container
-docker run -d -p 8080:80 --name static-nginx my-static-web
+    docker run -d -p 8080:80 --name static-nginx my-static-web
 
 # Test
-Mở trình duyệt và truy cập http://localhost:8080. Bạn sẽ thấy nội dung file index.html.
+    Mở trình duyệt và truy cập http://localhost:8080. Bạn sẽ thấy nội dung file index.html.
+    curl http://localhost:8080
 
 # Stop Docker container
-docker stop static-nginx
+    docker stop static-nginx
 
 # Remove Docker container
-docker rm static-nginx
+    docker rm static-nginx
