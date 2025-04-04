@@ -64,3 +64,22 @@
 #### Stop Docker Container
 
 ![](proof_images/Ex01_NodeJS_DockerStop.png)
+
+
+### Bài 2:
+
+#### Build Docker Image
+
+![](proof_images/Ex02_Flask_DockerBuild.png)
+
+#### Run Docker Container
+
+![](proof_images/Ex02_Flask_DockerRun.png)
+
+#### Test
+
+![](proof_images/Ex02_Flask_Test.png)
+
+#### Stop Docker Container
+
+![](proof_images/Ex02_Flask_DockerStop.png)
