@@ -2,14 +2,26 @@ package main
 
 import (
     "fmt"
+    "log"
     "net/http"
+    "os"
 )
 
-func main() {
-    http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-        fmt.Fprintf(w, "Hello, Docker from Go!")
-    })
+func handler(w http.ResponseWriter, r *http.Request) {
+    log.Printf("Received request from %s\n", r.RemoteAddr)
+    fmt.Fprintf(w, "Hello from Go in Docker!")
+}
 
-    fmt.Println("Server is listening on port 8080...")
-    http.ListenAndServe(":8080", nil)
+func main() {
+    port := "8080"
+    if fromEnv := os.Getenv("PORT"); fromEnv != "" {
+        port = fromEnv
+    }
+    log.Printf("Server starting on port %s\n", port)
+
+    http.HandleFunc("/", handler)
+    err := http.ListenAndServe(":"+port, nil)
+    if err != nil {
+        log.Fatal(err)
+    }
 }
