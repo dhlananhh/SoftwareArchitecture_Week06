@@ -47,7 +47,7 @@
 
 ## Phần II: Thao tác với Dockerfile
 
-### Bài 1:
+### Exercise 01: Create a Dockerfile to run a simple Node.js application
 
 #### Build Docker Image
 
@@ -65,8 +65,7 @@
 
 ![](proof_images/Ex01_NodeJS_DockerStop.png)
 
-
-### Bài 2:
+### Exercise 02: Create a Dockerfile to run a Python Flask application
 
 #### Build Docker Image
 
@@ -83,3 +82,61 @@
 #### Stop Docker Container
 
 ![](proof_images/Ex02_Flask_DockerStop.png)
+
+
+### Exercise 03: Create a Dockerfile to run a React application
+
+#### Build Docker Image
+
+![](proof_images/Ex03_React_DockerBuild.png)
+
+#### Run Docker Container
+
+![](proof_images/Ex03_React_DockerRun.png)
+
+#### Test
+
+![](proof_images/Ex03_React_Test.png)
+
+#### Stop Docker Container
+
+![](proof_images/Ex03_React_DockerStop.png)
+
+
+### Exercise 04: Create Dockerfile to run a static website using Nginx
+
+#### Build Docker Image
+
+![](proof_images/Ex04_Nginx_DockerBuild.png)
+
+#### Run Docker Container
+
+![](proof_images/Ex04_Nginx_DockerRun.png)
+
+#### Test
+
+![](proof_images/Ex04_Nginx_Test_1.png)
+![](proof_images/Ex04_Nginx_Test_2.png)
+
+#### Stop Docker Container
+
+![](proof_images/Ex04_Nginx_DockerStop.png)
+
+
+### Exercise 05: Create Dockerfile to run Go application
+
+#### Build Docker Image
+
+![](proof_images/Ex05_Go_DockerBuild.png)
+
+#### Run Docker Container
+
+![](proof_images/Ex05_Go_DockerRun.png)
+
+#### Test
+
+![](proof_images/Ex05_Go_Test.png)
+
+#### Stop Docker Container
+
+![](proof_images/Ex05_Go_DockerStop.png)
