@@ -83,7 +83,6 @@
 
 ![](proof_images/Ex02_Flask_DockerStop.png)
 
-
 ### Exercise 03: Create a Dockerfile to run a React application
 
 #### Build Docker Image
@@ -101,7 +100,6 @@
 #### Stop Docker Container
 
 ![](proof_images/Ex03_React_DockerStop.png)
-
 
 ### Exercise 04: Create Dockerfile to run a static website using Nginx
 
@@ -121,7 +119,6 @@
 #### Stop Docker Container
 
 ![](proof_images/Ex04_Nginx_DockerStop.png)
-
 
 ### Exercise 05: Create Dockerfile to run Go application
 
