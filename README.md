@@ -244,4 +244,6 @@
 
 ![](proof_images/Ex10_PHP_Apache_DockerRemove.png)
 
+#### Remove Docker Image
+
 ![](proof_images/Ex10_PHP_Apache_DockerRemoveImage.png)
