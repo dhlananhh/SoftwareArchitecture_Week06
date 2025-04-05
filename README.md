@@ -140,3 +140,111 @@
 #### Stop Docker Container
 
 ![](proof_images/Ex05_Go_DockerStop.png)
+
+
+### Exercise 06: Using Multi-stage Build in Dockerfile
+
+#### Build Docker Image
+
+![](proof_images/Ex06_MultiStageBuild_DockerBuild.png)
+
+#### Run Docker Container
+
+![](proof_images/Ex06_MultiStageBuild_DockerRun.png)
+
+#### Test
+
+![](proof_images/Ex06_MultiStageBuild_Test.png)
+
+#### Stop Docker Container
+
+![](proof_images/Ex06_MultiStageBuild_DockerStop.png)
+
+
+### Exercise 07: Using environment variables in Dockerfile
+
+#### Build Docker Image
+
+![](proof_images/Ex07_EnvVar_DockerBuild.png)
+
+#### Run Docker Container
+
+![](proof_images/Ex07_EnvVar_DockerRun_1.png)
+
+![](proof_images/Ex07_EnvVar_DockerRun_2.png)
+
+#### Stop Docker Container
+
+![](proof_images/Ex07_EnvVar_DockerStop_1.png)
+![](proof_images/Ex07_EnvVar_DockerStop_2.png)
+
+
+### Exercise 08: Create a Dockerfile for custom PostgreSQL
+
+#### Build Docker Image
+
+![](proof_images/Ex08_PostgreSQL_DockerBuild.png)
+
+#### Run Docker Container
+
+![](proof_images/Ex08_PostgreSQL_DockerRun.png)
+
+#### Test
+
+![](proof_images/Ex08_PostgreSQL_Test.png)
+
+#### Stop Docker Container
+
+![](proof_images/Ex08_PostgreSQL_DockerStop.png)
+
+
+### Exercise 09: Create Dockerfile to run Redis with custom configuration
+
+#### Build Docker Image
+
+![](proof_images/Ex09_Redis_DockerBuild.png)
+
+#### Run Docker Container
+
+![](proof_images/Ex09_Redis_DockerRun.png)
+
+#### Test
+
+![](proof_images/Ex09_Redis_Test.png)
+
+#### Stop Docker Container
+
+![](proof_images/Ex09_Redis_DockerStop.png)
+
+
+### Exercise 10: Running PHP applications with Apache
+
+#### Build Docker Image
+
+![](proof_images/Ex10_PHP_Apache_DockerBuild.png)
+
+#### Run Docker Container
+
+![](proof_images/Ex10_PHP_Apache_DockerRun.png)
+
+#### Test
+
+![](proof_images/Ex10_PHP_Apache_Test_1.png)
+
+![](proof_images/Ex10_PHP_Apache_Test_2.png)
+
+![](proof_images/Ex10_PHP_Apache_Test_3.png)
+
+![](proof_images/Ex10_PHP_Apache_Test_4.png)
+
+![](proof_images/Ex10_PHP_Apache_Test_5.png)
+
+#### Stop Docker Container
+
+![](proof_images/Ex10_PHP_Apache_DockerStop.png)
+
+#### Remove Docker Container
+
+![](proof_images/Ex10_PHP_Apache_DockerRemove.png)
+
+![](proof_images/Ex10_PHP_Apache_DockerRemoveImage.png)
