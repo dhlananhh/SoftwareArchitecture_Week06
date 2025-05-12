@@ -7,7 +7,7 @@
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^14.6.1",
-    "css-loader": "^6.11.0",
+    "css-loader": "^7.1.2",
     "css-select": "^2.1.0",
     "postcss": "^8.5.3",
     "react": "^19.1.0",
