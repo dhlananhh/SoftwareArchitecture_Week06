@@ -12,7 +12,7 @@
     "postcss": "^8.5.3",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "resolve-url-loader": "^4.0.0",
+    "resolve-url-loader": "^5.0.0",
     "tailwindcss": "^3.4.17",
     "web-vitals": "^4.2.4"
   },
