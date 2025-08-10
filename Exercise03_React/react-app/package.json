@@ -3,17 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/dom": "^10.4.0",
+    "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^14.6.1",
     "css-loader": "^7.1.2",
-    "css-select": "^5.1.0",
+    "css-select": "^6.0.0",
     "postcss": "^8.5.3",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "resolve-url-loader": "^5.0.0",
-    "tailwindcss": "^4.1.11",
+    "tailwindcss": "^4.1.6",
     "web-vitals": "^5.0.0"
   },
   "devDependencies": {
